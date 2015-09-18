@@ -63,7 +63,7 @@ try {
 	//print_r( $client->order_refunds->delete( $order_id, $refund_id ) );
 
 	// products
-	print_r(json_encode($client->products->get(null, array( 'filter[limit]' => 10, 'filter[category]' => 'home-and-living' ))));
+	print_r(json_encode($client->products->get(null, array( 'filter[limit]' => 5, 'filter[category]' => 'Home & Living' ))));
 	//print_r( $client->products->get( $product_id ) );
 	//print_r( $client->products->get( $variation_id ) );
 	//print_r( $client->products->get_by_sku( 'a-product-sku' ) );
