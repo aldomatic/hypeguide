@@ -63,7 +63,7 @@ try {
 	//print_r( $client->order_refunds->delete( $order_id, $refund_id ) );
 
 	// products
-	print_r(json_encode($client->products->get(null, array( 'filter[limit]' => 5, 'filter[category]' => 'Home & Living' ))));
+	//print_r(json_encode($client->products->get(null, array( 'filter[limit]' => 5, 'filter[category]' => 'Home & Living' ))));
 	//print_r( $client->products->get( $product_id ) );
 	//print_r( $client->products->get( $variation_id ) );
 	//print_r( $client->products->get_by_sku( 'a-product-sku' ) );
@@ -72,7 +72,7 @@ try {
 	//print_r( $client->products->delete( $product_id, true ) );
 	//print_r( $client->products->get_count() );
 	//print_r( $client->products->get_count( array( 'type' => 'simple' ) ) );
-	//print_r( $client->products->get_categories() );
+	print_r(json_encode($client->products->get_categories()));
 	//print_r(json_encode($client->products->get_categories(57)));
 
 	// reports
