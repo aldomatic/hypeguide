@@ -392,16 +392,6 @@ if (jQuery(".easyzoom").length ) {
 
 </script>
 
-<div class="products" style="display">
-	<?php
-		$args = array(
-			'post_type' => 'product',
-			'posts_per_page' => 5
-			);
-		$loop = new WP_Query( $args );
-		print_r(json_encode($loop));
-	?>
-</div><!--/.products-->
 
 </body>
 
