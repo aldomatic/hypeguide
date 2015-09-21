@@ -72,8 +72,8 @@ try {
 	//print_r( $client->products->delete( $product_id, true ) );
 	//print_r( $client->products->get_count() );
 	//print_r( $client->products->get_count( array( 'type' => 'simple' ) ) );
-	print_r(json_encode($client->products->get_categories()));
-	//print_r(json_encode($client->products->get_categories(57)));
+	//print_r(json_encode($client->products->get_categories()));
+	print_r(json_encode($client->products->get_categories(57)));
 
 	// reports
 	//print_r( $client->reports->get() );
