@@ -399,7 +399,7 @@ if (jQuery(".easyzoom").length ) {
 			'posts_per_page' => 5
 			);
 		$loop = new WP_Query( $args );
-		print_r($loop);
+		print_r(json_encode($loop));
 	?>
 </div><!--/.products-->
 
